@@ -8,7 +8,11 @@ import net.minecraft.util.EnumFacing;
 
 import java.util.ArrayList;
 
+//If your MC version is higher than 1.8.9, change "thePlayer" to "player" and "theWorld" to "world".
+
 public class BlockUtils {
+    
+    //If this metod returns null, that means that there isn't side of the block available.
     public static EnumFacing getFacingToBlock(BlockPos blockPosition) {
         ArrayList<BlockPos> possiblePos = new ArrayList<>();
         ArrayList<BlockPos> blockPosList = new ArrayList<>();
