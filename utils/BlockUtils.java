@@ -21,7 +21,8 @@ public class BlockUtils {
         possiblePos.add(blockPosition.add(0,0,1));
 
         for(BlockPos blockPos : possiblePos) {
-            if(Minecraft.getMinecraft().theWorld.getBlockState(blockPos).getBlock() instanceof BlockAir || Minecraft.getMinecraft().theWorld.getBlockState(blockPos).getBlock() instanceof BlockLiquid) {
+            if(Minecraft.getMinecraft().theWorld.getBlockState(blockPos).getBlock() instanceof BlockAir ||
+               Minecraft.getMinecraft().theWorld.getBlockState(blockPos).getBlock() instanceof BlockLiquid) {
                 blockPosList.add(blockPos);
             }
         }
